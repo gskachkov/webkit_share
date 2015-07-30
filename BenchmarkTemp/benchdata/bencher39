@@ -1,0 +1,16 @@
+function __bencher_curTimeMS() {
+   return preciseTime()*1000
+}
+function __bencher_run(__bencher_what) {
+   var __bencher_before = __bencher_curTimeMS();
+   run(__bencher_what);
+   run(__bencher_what);
+   run(__bencher_what);
+   run(__bencher_what);
+   var __bencher_after = __bencher_curTimeMS();
+   return __bencher_after - __bencher_before;
+}
+__bencher_run("SunSpider-access-nbody38")
+gc();
+print("WARMUP/access-nbody: Foo: 0: 0: Time: "+__bencher_run("SunSpider-access-nbody38"));
+gc();

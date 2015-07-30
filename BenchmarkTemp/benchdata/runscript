@@ -1,0 +1,465 @@
+echo "HOSTNAME:\c"
+hostname
+echo
+echo "HARDWARE:\c"
+/usr/sbin/sysctl hw.model
+echo
+set -e
+echo \\ 0/38\ WARMUP/string-unpack-code/Foo\ \ \ \ \ \ \ "\c" 1>&2
+echo \\ 0/38\ WARMUP/string-unpack-code/Foo"\c" 1>&2
+unset JSC_useFTLJIT
+unset JSC_useDFGJIT
+export DYLD_LIBRARY_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export DYLD_FRAMEWORK_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export JSC_useFTLJIT=false
+export JSC_useDFGJIT=false
+/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release/jsc bencher1 2>&1 || {
+    echo Foo\ failed\ to\ run\! 1>&2
+    echo WARMUP/string-unpack-code:\ Foo:\ 0:\ 0:\ CRASHED
+}
+echo \\ 1/38\ WARMUP/date-format-tofte/Foo\ \ \ \ \ \ \ \ "\c" 1>&2
+echo \\ 1/38\ WARMUP/date-format-tofte/Foo"\c" 1>&2
+unset JSC_useFTLJIT
+unset JSC_useDFGJIT
+export DYLD_LIBRARY_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export DYLD_FRAMEWORK_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export JSC_useFTLJIT=false
+export JSC_useDFGJIT=false
+/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release/jsc bencher3 2>&1 || {
+    echo Foo\ failed\ to\ run\! 1>&2
+    echo WARMUP/date-format-tofte:\ Foo:\ 0:\ 0:\ CRASHED
+}
+echo \\ 2/38\ WARMUP/string-fasta/Foo\ \ \ \ \ \ \ \ \ \ \ \ \ "\c" 1>&2
+echo \\ 2/38\ WARMUP/string-fasta/Foo"\c" 1>&2
+unset JSC_useFTLJIT
+unset JSC_useDFGJIT
+export DYLD_LIBRARY_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export DYLD_FRAMEWORK_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export JSC_useFTLJIT=false
+export JSC_useDFGJIT=false
+/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release/jsc bencher5 2>&1 || {
+    echo Foo\ failed\ to\ run\! 1>&2
+    echo WARMUP/string-fasta:\ Foo:\ 0:\ 0:\ CRASHED
+}
+echo \\ 3/38\ WARMUP/3d-raytrace/Foo\ \ \ \ \ \ \ \ \ \ \ \ \ \ "\c" 1>&2
+echo \\ 3/38\ WARMUP/3d-raytrace/Foo"\c" 1>&2
+unset JSC_useFTLJIT
+unset JSC_useDFGJIT
+export DYLD_LIBRARY_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export DYLD_FRAMEWORK_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export JSC_useFTLJIT=false
+export JSC_useDFGJIT=false
+/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release/jsc bencher7 2>&1 || {
+    echo Foo\ failed\ to\ run\! 1>&2
+    echo WARMUP/3d-raytrace:\ Foo:\ 0:\ 0:\ CRASHED
+}
+echo \\ 4/38\ WARMUP/crypto-sha1/Foo\ \ \ \ \ \ \ \ \ \ \ \ \ \ "\c" 1>&2
+echo \\ 4/38\ WARMUP/crypto-sha1/Foo"\c" 1>&2
+unset JSC_useFTLJIT
+unset JSC_useDFGJIT
+export DYLD_LIBRARY_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export DYLD_FRAMEWORK_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export JSC_useFTLJIT=false
+export JSC_useDFGJIT=false
+/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release/jsc bencher9 2>&1 || {
+    echo Foo\ failed\ to\ run\! 1>&2
+    echo WARMUP/crypto-sha1:\ Foo:\ 0:\ 0:\ CRASHED
+}
+echo \\ 5/38\ WARMUP/string-tagcloud/Foo\ \ \ \ \ \ \ \ \ \ "\c" 1>&2
+echo \\ 5/38\ WARMUP/string-tagcloud/Foo"\c" 1>&2
+unset JSC_useFTLJIT
+unset JSC_useDFGJIT
+export DYLD_LIBRARY_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export DYLD_FRAMEWORK_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export JSC_useFTLJIT=false
+export JSC_useDFGJIT=false
+/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release/jsc bencher11 2>&1 || {
+    echo Foo\ failed\ to\ run\! 1>&2
+    echo WARMUP/string-tagcloud:\ Foo:\ 0:\ 0:\ CRASHED
+}
+echo \\ 6/38\ WARMUP/3d-cube/Foo\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "\c" 1>&2
+echo \\ 6/38\ WARMUP/3d-cube/Foo"\c" 1>&2
+unset JSC_useFTLJIT
+unset JSC_useDFGJIT
+export DYLD_LIBRARY_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export DYLD_FRAMEWORK_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export JSC_useFTLJIT=false
+export JSC_useDFGJIT=false
+/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release/jsc bencher13 2>&1 || {
+    echo Foo\ failed\ to\ run\! 1>&2
+    echo WARMUP/3d-cube:\ Foo:\ 0:\ 0:\ CRASHED
+}
+echo \\ 7/38\ WARMUP/math-spectral-norm/Foo\ \ \ \ \ \ \ "\c" 1>&2
+echo \\ 7/38\ WARMUP/math-spectral-norm/Foo"\c" 1>&2
+unset JSC_useFTLJIT
+unset JSC_useDFGJIT
+export DYLD_LIBRARY_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export DYLD_FRAMEWORK_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export JSC_useFTLJIT=false
+export JSC_useDFGJIT=false
+/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release/jsc bencher15 2>&1 || {
+    echo Foo\ failed\ to\ run\! 1>&2
+    echo WARMUP/math-spectral-norm:\ Foo:\ 0:\ 0:\ CRASHED
+}
+echo \\ 8/38\ WARMUP/bitops-nsieve-bits/Foo\ \ \ \ \ \ \ "\c" 1>&2
+echo \\ 8/38\ WARMUP/bitops-nsieve-bits/Foo"\c" 1>&2
+unset JSC_useFTLJIT
+unset JSC_useDFGJIT
+export DYLD_LIBRARY_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export DYLD_FRAMEWORK_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export JSC_useFTLJIT=false
+export JSC_useDFGJIT=false
+/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release/jsc bencher17 2>&1 || {
+    echo Foo\ failed\ to\ run\! 1>&2
+    echo WARMUP/bitops-nsieve-bits:\ Foo:\ 0:\ 0:\ CRASHED
+}
+echo \\ 9/38\ WARMUP/math-partial-sums/Foo\ \ \ \ \ \ \ \ "\c" 1>&2
+echo \\ 9/38\ WARMUP/math-partial-sums/Foo"\c" 1>&2
+unset JSC_useFTLJIT
+unset JSC_useDFGJIT
+export DYLD_LIBRARY_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export DYLD_FRAMEWORK_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export JSC_useFTLJIT=false
+export JSC_useDFGJIT=false
+/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release/jsc bencher19 2>&1 || {
+    echo Foo\ failed\ to\ run\! 1>&2
+    echo WARMUP/math-partial-sums:\ Foo:\ 0:\ 0:\ CRASHED
+}
+echo \10/38\ WARMUP/bitops-3bit-bits-in-byte/Foo\ "\c" 1>&2
+echo \10/38\ WARMUP/bitops-3bit-bits-in-byte/Foo"\c" 1>&2
+unset JSC_useFTLJIT
+unset JSC_useDFGJIT
+export DYLD_LIBRARY_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export DYLD_FRAMEWORK_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export JSC_useFTLJIT=false
+export JSC_useDFGJIT=false
+/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release/jsc bencher21 2>&1 || {
+    echo Foo\ failed\ to\ run\! 1>&2
+    echo WARMUP/bitops-3bit-bits-in-byte:\ Foo:\ 0:\ 0:\ CRASHED
+}
+echo \11/38\ WARMUP/math-cordic/Foo\ \ \ \ \ \ \ \ \ \ \ \ \ \ "\c" 1>&2
+echo \11/38\ WARMUP/math-cordic/Foo"\c" 1>&2
+unset JSC_useFTLJIT
+unset JSC_useDFGJIT
+export DYLD_LIBRARY_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export DYLD_FRAMEWORK_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export JSC_useFTLJIT=false
+export JSC_useDFGJIT=false
+/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release/jsc bencher23 2>&1 || {
+    echo Foo\ failed\ to\ run\! 1>&2
+    echo WARMUP/math-cordic:\ Foo:\ 0:\ 0:\ CRASHED
+}
+echo \12/38\ WARMUP/access-nsieve/Foo\ \ \ \ \ \ \ \ \ \ \ \ "\c" 1>&2
+echo \12/38\ WARMUP/access-nsieve/Foo"\c" 1>&2
+unset JSC_useFTLJIT
+unset JSC_useDFGJIT
+export DYLD_LIBRARY_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export DYLD_FRAMEWORK_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export JSC_useFTLJIT=false
+export JSC_useDFGJIT=false
+/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release/jsc bencher25 2>&1 || {
+    echo Foo\ failed\ to\ run\! 1>&2
+    echo WARMUP/access-nsieve:\ Foo:\ 0:\ 0:\ CRASHED
+}
+echo \13/38\ WARMUP/3d-morph/Foo\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "\c" 1>&2
+echo \13/38\ WARMUP/3d-morph/Foo"\c" 1>&2
+unset JSC_useFTLJIT
+unset JSC_useDFGJIT
+export DYLD_LIBRARY_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export DYLD_FRAMEWORK_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export JSC_useFTLJIT=false
+export JSC_useDFGJIT=false
+/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release/jsc bencher27 2>&1 || {
+    echo Foo\ failed\ to\ run\! 1>&2
+    echo WARMUP/3d-morph:\ Foo:\ 0:\ 0:\ CRASHED
+}
+echo \14/38\ WARMUP/regexp-dna/Foo\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "\c" 1>&2
+echo \14/38\ WARMUP/regexp-dna/Foo"\c" 1>&2
+unset JSC_useFTLJIT
+unset JSC_useDFGJIT
+export DYLD_LIBRARY_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export DYLD_FRAMEWORK_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export JSC_useFTLJIT=false
+export JSC_useDFGJIT=false
+/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release/jsc bencher29 2>&1 || {
+    echo Foo\ failed\ to\ run\! 1>&2
+    echo WARMUP/regexp-dna:\ Foo:\ 0:\ 0:\ CRASHED
+}
+echo \15/38\ WARMUP/access-binary-trees/Foo\ \ \ \ \ \ "\c" 1>&2
+echo \15/38\ WARMUP/access-binary-trees/Foo"\c" 1>&2
+unset JSC_useFTLJIT
+unset JSC_useDFGJIT
+export DYLD_LIBRARY_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export DYLD_FRAMEWORK_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export JSC_useFTLJIT=false
+export JSC_useDFGJIT=false
+/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release/jsc bencher31 2>&1 || {
+    echo Foo\ failed\ to\ run\! 1>&2
+    echo WARMUP/access-binary-trees:\ Foo:\ 0:\ 0:\ CRASHED
+}
+echo \16/38\ WARMUP/string-base64/Foo\ \ \ \ \ \ \ \ \ \ \ \ "\c" 1>&2
+echo \16/38\ WARMUP/string-base64/Foo"\c" 1>&2
+unset JSC_useFTLJIT
+unset JSC_useDFGJIT
+export DYLD_LIBRARY_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export DYLD_FRAMEWORK_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export JSC_useFTLJIT=false
+export JSC_useDFGJIT=false
+/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release/jsc bencher33 2>&1 || {
+    echo Foo\ failed\ to\ run\! 1>&2
+    echo WARMUP/string-base64:\ Foo:\ 0:\ 0:\ CRASHED
+}
+echo \17/38\ WARMUP/crypto-aes/Foo\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "\c" 1>&2
+echo \17/38\ WARMUP/crypto-aes/Foo"\c" 1>&2
+unset JSC_useFTLJIT
+unset JSC_useDFGJIT
+export DYLD_LIBRARY_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export DYLD_FRAMEWORK_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export JSC_useFTLJIT=false
+export JSC_useDFGJIT=false
+/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release/jsc bencher35 2>&1 || {
+    echo Foo\ failed\ to\ run\! 1>&2
+    echo WARMUP/crypto-aes:\ Foo:\ 0:\ 0:\ CRASHED
+}
+echo \18/38\ WARMUP/bitops-bitwise-and/Foo\ \ \ \ \ \ \ "\c" 1>&2
+echo \18/38\ WARMUP/bitops-bitwise-and/Foo"\c" 1>&2
+unset JSC_useFTLJIT
+unset JSC_useDFGJIT
+export DYLD_LIBRARY_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export DYLD_FRAMEWORK_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export JSC_useFTLJIT=false
+export JSC_useDFGJIT=false
+/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release/jsc bencher37 2>&1 || {
+    echo Foo\ failed\ to\ run\! 1>&2
+    echo WARMUP/bitops-bitwise-and:\ Foo:\ 0:\ 0:\ CRASHED
+}
+echo \19/38\ WARMUP/access-nbody/Foo\ \ \ \ \ \ \ \ \ \ \ \ \ "\c" 1>&2
+echo \19/38\ WARMUP/access-nbody/Foo"\c" 1>&2
+unset JSC_useFTLJIT
+unset JSC_useDFGJIT
+export DYLD_LIBRARY_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export DYLD_FRAMEWORK_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export JSC_useFTLJIT=false
+export JSC_useDFGJIT=false
+/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release/jsc bencher39 2>&1 || {
+    echo Foo\ failed\ to\ run\! 1>&2
+    echo WARMUP/access-nbody:\ Foo:\ 0:\ 0:\ CRASHED
+}
+echo \20/38\ WARMUP/controlflow-recursive/Foo\ \ \ \ "\c" 1>&2
+echo \20/38\ WARMUP/controlflow-recursive/Foo"\c" 1>&2
+unset JSC_useFTLJIT
+unset JSC_useDFGJIT
+export DYLD_LIBRARY_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export DYLD_FRAMEWORK_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export JSC_useFTLJIT=false
+export JSC_useDFGJIT=false
+/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release/jsc bencher41 2>&1 || {
+    echo Foo\ failed\ to\ run\! 1>&2
+    echo WARMUP/controlflow-recursive:\ Foo:\ 0:\ 0:\ CRASHED
+}
+echo \21/38\ WARMUP/bitops-bits-in-byte/Foo\ \ \ \ \ \ "\c" 1>&2
+echo \21/38\ WARMUP/bitops-bits-in-byte/Foo"\c" 1>&2
+unset JSC_useFTLJIT
+unset JSC_useDFGJIT
+export DYLD_LIBRARY_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export DYLD_FRAMEWORK_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export JSC_useFTLJIT=false
+export JSC_useDFGJIT=false
+/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release/jsc bencher43 2>&1 || {
+    echo Foo\ failed\ to\ run\! 1>&2
+    echo WARMUP/bitops-bits-in-byte:\ Foo:\ 0:\ 0:\ CRASHED
+}
+echo \22/38\ WARMUP/string-validate-input/Foo\ \ \ \ "\c" 1>&2
+echo \22/38\ WARMUP/string-validate-input/Foo"\c" 1>&2
+unset JSC_useFTLJIT
+unset JSC_useDFGJIT
+export DYLD_LIBRARY_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export DYLD_FRAMEWORK_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export JSC_useFTLJIT=false
+export JSC_useDFGJIT=false
+/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release/jsc bencher45 2>&1 || {
+    echo Foo\ failed\ to\ run\! 1>&2
+    echo WARMUP/string-validate-input:\ Foo:\ 0:\ 0:\ CRASHED
+}
+echo \23/38\ WARMUP/date-format-xparb/Foo\ \ \ \ \ \ \ \ "\c" 1>&2
+echo \23/38\ WARMUP/date-format-xparb/Foo"\c" 1>&2
+unset JSC_useFTLJIT
+unset JSC_useDFGJIT
+export DYLD_LIBRARY_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export DYLD_FRAMEWORK_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export JSC_useFTLJIT=false
+export JSC_useDFGJIT=false
+/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release/jsc bencher47 2>&1 || {
+    echo Foo\ failed\ to\ run\! 1>&2
+    echo WARMUP/date-format-xparb:\ Foo:\ 0:\ 0:\ CRASHED
+}
+echo \24/38\ WARMUP/access-fannkuch/Foo\ \ \ \ \ \ \ \ \ \ "\c" 1>&2
+echo \24/38\ WARMUP/access-fannkuch/Foo"\c" 1>&2
+unset JSC_useFTLJIT
+unset JSC_useDFGJIT
+export DYLD_LIBRARY_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export DYLD_FRAMEWORK_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export JSC_useFTLJIT=false
+export JSC_useDFGJIT=false
+/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release/jsc bencher49 2>&1 || {
+    echo Foo\ failed\ to\ run\! 1>&2
+    echo WARMUP/access-fannkuch:\ Foo:\ 0:\ 0:\ CRASHED
+}
+echo \25/38\ WARMUP/crypto-md5/Foo\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "\c" 1>&2
+echo \25/38\ WARMUP/crypto-md5/Foo"\c" 1>&2
+unset JSC_useFTLJIT
+unset JSC_useDFGJIT
+export DYLD_LIBRARY_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export DYLD_FRAMEWORK_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export JSC_useFTLJIT=false
+export JSC_useDFGJIT=false
+/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release/jsc bencher51 2>&1 || {
+    echo Foo\ failed\ to\ run\! 1>&2
+    echo WARMUP/crypto-md5:\ Foo:\ 0:\ 0:\ CRASHED
+}
+echo \26/38\ JSRegress/arrowfunction-afcall/Foo\ \ "\c" 1>&2
+echo \26/38\ JSRegress/arrowfunction-afcall/Foo"\c" 1>&2
+unset JSC_useFTLJIT
+unset JSC_useDFGJIT
+export DYLD_LIBRARY_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export DYLD_FRAMEWORK_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export JSC_useFTLJIT=false
+export JSC_useDFGJIT=false
+/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release/jsc bencher53 2>&1 || {
+    echo Foo\ failed\ to\ run\! 1>&2
+    echo JSRegress/arrowfunction-afcall:\ Foo:\ 2:\ 0:\ CRASHED
+}
+echo \27/38\ JSRegress/functionexp-afcall-2/Foo\ \ "\c" 1>&2
+echo \27/38\ JSRegress/functionexp-afcall-2/Foo"\c" 1>&2
+unset JSC_useFTLJIT
+unset JSC_useDFGJIT
+export DYLD_LIBRARY_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export DYLD_FRAMEWORK_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export JSC_useFTLJIT=false
+export JSC_useDFGJIT=false
+/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release/jsc bencher55 2>&1 || {
+    echo Foo\ failed\ to\ run\! 1>&2
+    echo JSRegress/functionexp-afcall-2:\ Foo:\ 3:\ 0:\ CRASHED
+}
+echo \28/38\ JSRegress/arrowfunction-afcall/Foo\ \ "\c" 1>&2
+echo \28/38\ JSRegress/arrowfunction-afcall/Foo"\c" 1>&2
+unset JSC_useFTLJIT
+unset JSC_useDFGJIT
+export DYLD_LIBRARY_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export DYLD_FRAMEWORK_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export JSC_useFTLJIT=false
+export JSC_useDFGJIT=false
+/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release/jsc bencher56 2>&1 || {
+    echo Foo\ failed\ to\ run\! 1>&2
+    echo JSRegress/arrowfunction-afcall:\ Foo:\ 0:\ 0:\ CRASHED
+}
+echo \29/38\ JSRegress/functionexp-afcall-1/Foo\ \ "\c" 1>&2
+echo \29/38\ JSRegress/functionexp-afcall-1/Foo"\c" 1>&2
+unset JSC_useFTLJIT
+unset JSC_useDFGJIT
+export DYLD_LIBRARY_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export DYLD_FRAMEWORK_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export JSC_useFTLJIT=false
+export JSC_useDFGJIT=false
+/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release/jsc bencher58 2>&1 || {
+    echo Foo\ failed\ to\ run\! 1>&2
+    echo JSRegress/functionexp-afcall-1:\ Foo:\ 1:\ 0:\ CRASHED
+}
+echo \30/38\ JSRegress/arrowfunction-afcall/Foo\ \ "\c" 1>&2
+echo \30/38\ JSRegress/arrowfunction-afcall/Foo"\c" 1>&2
+unset JSC_useFTLJIT
+unset JSC_useDFGJIT
+export DYLD_LIBRARY_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export DYLD_FRAMEWORK_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export JSC_useFTLJIT=false
+export JSC_useDFGJIT=false
+/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release/jsc bencher59 2>&1 || {
+    echo Foo\ failed\ to\ run\! 1>&2
+    echo JSRegress/arrowfunction-afcall:\ Foo:\ 1:\ 0:\ CRASHED
+}
+echo \31/38\ JSRegress/functionexp-afcall-2/Foo\ \ "\c" 1>&2
+echo \31/38\ JSRegress/functionexp-afcall-2/Foo"\c" 1>&2
+unset JSC_useFTLJIT
+unset JSC_useDFGJIT
+export DYLD_LIBRARY_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export DYLD_FRAMEWORK_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export JSC_useFTLJIT=false
+export JSC_useDFGJIT=false
+/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release/jsc bencher60 2>&1 || {
+    echo Foo\ failed\ to\ run\! 1>&2
+    echo JSRegress/functionexp-afcall-2:\ Foo:\ 2:\ 0:\ CRASHED
+}
+echo \32/38\ JSRegress/functionexp-afcall-2/Foo\ \ "\c" 1>&2
+echo \32/38\ JSRegress/functionexp-afcall-2/Foo"\c" 1>&2
+unset JSC_useFTLJIT
+unset JSC_useDFGJIT
+export DYLD_LIBRARY_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export DYLD_FRAMEWORK_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export JSC_useFTLJIT=false
+export JSC_useDFGJIT=false
+/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release/jsc bencher61 2>&1 || {
+    echo Foo\ failed\ to\ run\! 1>&2
+    echo JSRegress/functionexp-afcall-2:\ Foo:\ 0:\ 0:\ CRASHED
+}
+echo \33/38\ JSRegress/functionexp-afcall-1/Foo\ \ "\c" 1>&2
+echo \33/38\ JSRegress/functionexp-afcall-1/Foo"\c" 1>&2
+unset JSC_useFTLJIT
+unset JSC_useDFGJIT
+export DYLD_LIBRARY_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export DYLD_FRAMEWORK_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export JSC_useFTLJIT=false
+export JSC_useDFGJIT=false
+/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release/jsc bencher62 2>&1 || {
+    echo Foo\ failed\ to\ run\! 1>&2
+    echo JSRegress/functionexp-afcall-1:\ Foo:\ 0:\ 0:\ CRASHED
+}
+echo \34/38\ JSRegress/functionexp-afcall-1/Foo\ \ "\c" 1>&2
+echo \34/38\ JSRegress/functionexp-afcall-1/Foo"\c" 1>&2
+unset JSC_useFTLJIT
+unset JSC_useDFGJIT
+export DYLD_LIBRARY_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export DYLD_FRAMEWORK_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export JSC_useFTLJIT=false
+export JSC_useDFGJIT=false
+/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release/jsc bencher63 2>&1 || {
+    echo Foo\ failed\ to\ run\! 1>&2
+    echo JSRegress/functionexp-afcall-1:\ Foo:\ 2:\ 0:\ CRASHED
+}
+echo \35/38\ JSRegress/functionexp-afcall-2/Foo\ \ "\c" 1>&2
+echo \35/38\ JSRegress/functionexp-afcall-2/Foo"\c" 1>&2
+unset JSC_useFTLJIT
+unset JSC_useDFGJIT
+export DYLD_LIBRARY_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export DYLD_FRAMEWORK_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export JSC_useFTLJIT=false
+export JSC_useDFGJIT=false
+/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release/jsc bencher64 2>&1 || {
+    echo Foo\ failed\ to\ run\! 1>&2
+    echo JSRegress/functionexp-afcall-2:\ Foo:\ 1:\ 0:\ CRASHED
+}
+echo \36/38\ JSRegress/functionexp-afcall-1/Foo\ \ "\c" 1>&2
+echo \36/38\ JSRegress/functionexp-afcall-1/Foo"\c" 1>&2
+unset JSC_useFTLJIT
+unset JSC_useDFGJIT
+export DYLD_LIBRARY_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export DYLD_FRAMEWORK_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export JSC_useFTLJIT=false
+export JSC_useDFGJIT=false
+/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release/jsc bencher65 2>&1 || {
+    echo Foo\ failed\ to\ run\! 1>&2
+    echo JSRegress/functionexp-afcall-1:\ Foo:\ 3:\ 0:\ CRASHED
+}
+echo \37/38\ JSRegress/arrowfunction-afcall/Foo\ \ "\c" 1>&2
+echo \37/38\ JSRegress/arrowfunction-afcall/Foo"\c" 1>&2
+unset JSC_useFTLJIT
+unset JSC_useDFGJIT
+export DYLD_LIBRARY_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export DYLD_FRAMEWORK_PATH=/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release
+export JSC_useFTLJIT=false
+export JSC_useDFGJIT=false
+/Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release/jsc bencher66 2>&1 || {
+    echo Foo\ failed\ to\ run\! 1>&2
+    echo JSRegress/arrowfunction-afcall:\ Foo:\ 3:\ 0:\ CRASHED
+}
+echo \38/38\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "\c" 1>&2
+echo \38/38 1>&2

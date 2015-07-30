@@ -1,0 +1,22 @@
+Benchmark report for JSRegress on MacBook-Pro-Skachkov (MacBookPro8,1).
+
+VMs tested:
+"Foo" at /Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release/jsc
+    export JSC_useFTLJIT=false
+    export JSC_useDFGJIT=false
+
+Collected 4 samples per benchmark/VM, with 4 VM invocations per benchmark. Ran
+4 benchmark iterations, and measured the total time of those iterations, for
+each sample. Emitted a call to gc() between sample measurements. Used 4
+benchmark iterations per VM invocation for warm-up. Used the jsc-specific
+preciseTime() function to get microsecond-level timing. Reporting benchmark
+execution times with 95% confidence intervals in milliseconds.
+
+                                 Foo              
+
+arrowfunction-afcall      114.7651+-10.3756   
+functionexp-afcall-1      109.2662+-8.0758    
+functionexp-afcall-2      111.2619+-14.4191   
+
+<geometric>               111.5996+-4.1250    
+

@@ -1,0 +1,82 @@
+HOSTNAME:MacBook-Pro-Skachkov.local
+
+HARDWARE:hw.model: MacBookPro8,1
+
+WARMUP/string-unpack-code: Foo: 0: 0: Time: 182.126953125
+Cannot compile code block formatDate#DK9Ab5:[0x10a2d9960->0x10a099900, LLIntFunctionCall, 897] because of opcode op_call_eval
+Cannot compile code block formatDate#DK9Ab5:[0x10a2b0258->0x10b81f400, LLIntFunctionCall, 897] because of opcode op_call_eval
+Cannot compile code block formatDate#DK9Ab5:[0x10a2ab960->0x10b8fec00, LLIntFunctionCall, 897] because of opcode op_call_eval
+Cannot compile code block formatDate#DK9Ab5:[0x10c2ff258->0x10c43a400, LLIntFunctionCall, 897] because of opcode op_call_eval
+Cannot compile code block formatDate#DK9Ab5:[0x10c6fe960->0x10a099900, LLIntFunctionCall, 897] because of opcode op_call_eval
+Cannot compile code block formatDate#DK9Ab5:[0x10bafc258->0x10c5bb400, LLIntFunctionCall, 897] because of opcode op_call_eval
+Cannot compile code block formatDate#DK9Ab5:[0x10a2b0960->0x10b0bec00, LLIntFunctionCall, 897] because of opcode op_call_eval
+Cannot compile code block formatDate#DK9Ab5:[0x10a2b6258->0x10b5be400, LLIntFunctionCall, 897] because of opcode op_call_eval
+WARMUP/date-format-tofte: Foo: 0: 0: Time: 103.844970703125
+WARMUP/string-fasta: Foo: 0: 0: Time: 76.460205078125
+WARMUP/3d-raytrace: Foo: 0: 0: Time: 58.43798828125
+WARMUP/crypto-sha1: Foo: 0: 0: Time: 19.237060546875
+WARMUP/string-tagcloud: Foo: 0: 0: Time: 88.7421875
+WARMUP/3d-cube: Foo: 0: 0: Time: 66.9521484375
+WARMUP/math-spectral-norm: Foo: 0: 0: Time: 38.974853515625
+WARMUP/bitops-nsieve-bits: Foo: 0: 0: Time: 119.793212890625
+WARMUP/math-partial-sums: Foo: 0: 0: Time: 72.05126953125
+WARMUP/bitops-3bit-bits-in-byte: Foo: 0: 0: Time: 23.699951171875
+WARMUP/math-cordic: Foo: 0: 0: Time: 50.08984375
+WARMUP/access-nsieve: Foo: 0: 0: Time: 23.998046875
+WARMUP/3d-morph: Foo: 0: 0: Time: 101.7060546875
+WARMUP/regexp-dna: Foo: 0: 0: Time: 86.125244140625
+WARMUP/access-binary-trees: Foo: 0: 0: Time: 17.643798828125
+WARMUP/string-base64: Foo: 0: 0: Time: 44.703125
+WARMUP/crypto-aes: Foo: 0: 0: Time: 39.56298828125
+WARMUP/bitops-bitwise-and: Foo: 0: 0: Time: 33.9990234375
+WARMUP/access-nbody: Foo: 0: 0: Time: 39.989013671875
+WARMUP/controlflow-recursive: Foo: 0: 0: Time: 12.734130859375
+WARMUP/bitops-bits-in-byte: Foo: 0: 0: Time: 29.081787109375
+WARMUP/string-validate-input: Foo: 0: 0: Time: 38.537841796875
+WARMUP/date-format-xparb: Foo: 0: 0: Time: 89.77392578125
+WARMUP/access-fannkuch: Foo: 0: 0: Time: 102.197265625
+WARMUP/crypto-md5: Foo: 0: 0: Time: 29.729736328125
+JSRegress/arrowfunction-afcall: Foo: 2: 0: Time: 123.7060546875
+JSRegress/functionexp-afcall-2: Foo: 3: 0: Time: 124.22216796875
+JSRegress/arrowfunction-afcall: Foo: 0: 0: Time: 115.482177734375
+--> finish
+--> finish
+--> finish
+--> finish
+--> finish
+--> finish
+--> finish
+--> finish
+JSRegress/functionexp-afcall-1: Foo: 1: 0: Time: 113.77685546875
+JSRegress/arrowfunction-afcall: Foo: 1: 0: Time: 109.4580078125
+JSRegress/functionexp-afcall-2: Foo: 2: 0: Time: 110.6162109375
+JSRegress/functionexp-afcall-2: Foo: 0: 0: Time: 106.136962890625
+--> finish
+--> finish
+--> finish
+--> finish
+--> finish
+--> finish
+--> finish
+--> finish
+JSRegress/functionexp-afcall-1: Foo: 0: 0: Time: 109.864013671875
+--> finish
+--> finish
+--> finish
+--> finish
+--> finish
+--> finish
+--> finish
+--> finish
+JSRegress/functionexp-afcall-1: Foo: 2: 0: Time: 111.376953125
+JSRegress/functionexp-afcall-2: Foo: 1: 0: Time: 104.072265625
+--> finish
+--> finish
+--> finish
+--> finish
+--> finish
+--> finish
+--> finish
+--> finish
+JSRegress/functionexp-afcall-1: Foo: 3: 0: Time: 102.047119140625
+JSRegress/arrowfunction-afcall: Foo: 3: 0: Time: 110.4140625
