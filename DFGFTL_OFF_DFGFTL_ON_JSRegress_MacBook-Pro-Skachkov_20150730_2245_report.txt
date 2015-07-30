@@ -1,0 +1,22 @@
+Benchmark report for JSRegress on MacBook-Pro-Skachkov (MacBookPro8,1).
+
+VMs tested:
+"DFGFTL_OFF" at /Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release/jsc
+    export JSC_useFTLJIT=false
+    export JSC_useDFGJIT=false
+"DFGFTL_ON" at /Users/Developer/Projects/Webkit2/WebKitBuild/af_rebase6/Release/jsc
+
+Collected 4 samples per benchmark/VM, with 4 VM invocations per benchmark. Ran 4 benchmark iterations,
+and measured the total time of those iterations, for each sample. Emitted a call to gc() between
+sample measurements. Used 4 benchmark iterations per VM invocation for warm-up. Used the jsc-specific
+preciseTime() function to get microsecond-level timing. Reporting benchmark execution times with 95%
+confidence intervals in milliseconds.
+
+                              DFGFTL_OFF                DFGFTL_ON                                     
+
+arrowfunction-afcall       82.7784+-12.4316    ?     88.2967+-5.3365        ? might be 1.0667x slower
+functionexp-afcall-1       77.8478+-7.2609     ^     48.9952+-4.7345        ^ definitely 1.5889x faster
+functionexp-afcall-2       79.8950+-14.0838    ^     50.3787+-6.3106        ^ definitely 1.5859x faster
+
+<geometric>                79.9885+-6.6711     ^     60.1362+-4.1037        ^ definitely 1.3301x faster
+
